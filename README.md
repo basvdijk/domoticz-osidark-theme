@@ -1,5 +1,5 @@
-# domoticz-osidark-theme
-Responsive theme for Domoticz
+# OsiDark theme for Domoticz
+Responsive theme for open source Home Automation System Domoticz - https://www.domoticz.com/
 
 ## Please note
 
