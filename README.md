@@ -7,6 +7,14 @@ This theme is under development and might contains bugs. Make sure you have the 
 
 This theme comes with no warrenty use it at your own risk!
 
+## Intro
+
+Create a Domoticz theme with:
+
+* Simple / clean / flat design layout
+* Optimized for smartphone, tablet and desktop
+* Large tap area's for buttons on smartphone
+
 ## FAQ
 
 ### How do I install this theme?
