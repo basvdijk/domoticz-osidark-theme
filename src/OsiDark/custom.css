@@ -1,5 +1,9 @@
 /*
-Default style for Domoticz (no overrides)
+
+OsiDark theme
+Bas van Dijk
+https://github.com/basvdijk/domoticz-osidark-theme
+
 */
 
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
@@ -164,8 +168,8 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	border-radius: 0;
 }
 
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, 
-.navbar-inverse .nav li.dropdown.active > .dropdown-toggle, 
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
 	background-color: #6F7169;
 }
@@ -283,7 +287,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 
 .navbar .pull-right > li > .dropdown-menu:before {
 	display: none;
-} 
+}
 
 .navbar .nav li {
 	margin: 3px 1px;
@@ -322,19 +326,19 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 
 /*** jQuery UI ***/
 
-.ui-state-default, 
-.ui-widget-content .ui-state-default, 
+.ui-state-default,
+.ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: none;
 	background: #6190A9;
 	font-weight: normal;
 }
 
-.ui-state-hover, 
-.ui-widget-content .ui-state-hover, 
-.ui-widget-header .ui-state-hover, 
-.ui-state-focus, 
-.ui-widget-content .ui-state-focus, 
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: none;
 	background: #6190A9;
@@ -445,14 +449,14 @@ tr.odd {
 	box-shadow: none;
 }
 
-.mobileitem td, 
+.mobileitem td,
 .mobileitem th {
 	padding: 10px;
     background-image: none;
 	text-shadow: none;
 }
 
-.mobileitem td:first-child, 
+.mobileitem td:first-child,
 .mobileitem th:first-child {
     padding: 15px 10px;
 }
@@ -510,26 +514,26 @@ tr.odd {
 
 @media (min-width: 768px) {
 
-	body table#itemtable tbody tr, 
-	body table#itemtablenotype tbody tr, 
-	body table#itemtabledoubleicon tbody tr, 
+	body table#itemtable tbody tr,
+	body table#itemtablenotype tbody tr,
+	body table#itemtabledoubleicon tbody tr,
 	body table#itemtablenostatus tbody tr {
 		height: 175px;
 	}
 
-	body table#itemtable tbody tr td:first-child, 
-	body table#itemtablenotype tbody tr td:first-child, 
-	body table#itemtabledoubleicon tr td:first-child, 
-	body table#itemtablenostatus tr td:first-child, 
+	body table#itemtable tbody tr td:first-child,
+	body table#itemtablenotype tbody tr td:first-child,
+	body table#itemtabledoubleicon tr td:first-child,
+	body table#itemtablenostatus tr td:first-child,
 	body table#itemtablesmall tr td:first-child {
 	   padding: .8em .5em 0 1em;
     	font-size: 0.9rem;
 	}
 
-	body table#itemtable tr td:first-child + td, 
-	body table#itemtablenotype tr td:first-child + td, 
-	body table#itemtabledoubleicon tr td:first-child + td, 
-	body table#itemtablenostatus tr td:first-child + td, 
+	body table#itemtable tr td:first-child + td,
+	body table#itemtablenotype tr td:first-child + td,
+	body table#itemtabledoubleicon tr td:first-child + td,
+	body table#itemtablenostatus tr td:first-child + td,
 	body table#itemtablesmall tr td:first-child + td {
 		font-size: 1rem;
 	}
@@ -539,20 +543,20 @@ tr.odd {
 	    width: 32%;
 	}
 
-	
+
 
 }
 
 @media (min-width: 980px) {
 
-	.navbar .nav li a span, 
+	.navbar .nav li a span,
 	.navbar .nav .current_page_item > a span {
 	    position: relative;
 		top: 4px;
 	}
 
-	.navbar .nav li a, .navbar .nav li a:hover, 
-	.navbar .nav .current_page_item > a, 
+	.navbar .nav li a, .navbar .nav li a:hover,
+	.navbar .nav .current_page_item > a,
 	.navbar .nav .current_page_item > a:hover {
 	    margin-top: 0;
 	    display: block;
