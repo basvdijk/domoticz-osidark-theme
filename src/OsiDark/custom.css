@@ -1,9 +1,7 @@
 /*
-
-OsiDark theme
+OsiDark theme - v0.2
 Bas van Dijk
 https://github.com/basvdijk/domoticz-osidark-theme
-
 */
 
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
@@ -22,6 +20,11 @@ https://github.com/basvdijk/domoticz-osidark-theme
 body {
 	background: #1F1E1E;
 	font-family: "Open Sans";
+}
+
+body {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 h2 {
@@ -55,6 +58,7 @@ body table#itemtablenostatus tbody tr {
 	width: 100%;
 }
 
+body table#itemtablesmalldoubleicon tbody tr,
 body table#itemtablesmall tbody tr {
 	width: 100%;
 	height: 120px;
@@ -63,6 +67,7 @@ body table#itemtablesmall tbody tr {
 body table#itemtable tbody tr,
 body table#itemtablenotype tbody tr,
 body table#itemtabledoubleicon tbody tr,
+body table#itemtablesmalldoubleicon tbody tr,
 body table#itemtablenostatus tbody tr,
 body table#itemtablesmall tbody tr {
 	border-radius: 0;
@@ -75,6 +80,7 @@ body table#itemtablesmall tbody tr {
 body table#itemtable tbody tr td:first-child,
 body table#itemtablenotype tbody tr td:first-child,
 body table#itemtabledoubleicon tr td:first-child,
+body table#itemtablesmalldoubleicon tr td:first-child,
 body table#itemtablenostatus tr td:first-child,
 body table#itemtablesmall tr td:first-child {
 	border-radius: 0;
@@ -89,6 +95,7 @@ body table#itemtablesmall tr td:first-child {
 body table#itemtable tr td:first-child + td,
 body table#itemtablenotype tr td:first-child + td,
 body table#itemtabledoubleicon tr td:first-child + td,
+body table#itemtablesmalldoubleicon tr td:first-child + td,
 body table#itemtablenostatus tr td:first-child + td,
 body table#itemtablesmall tr td:first-child + td {
 	margin: -39px 10px 0px 0px;
@@ -97,6 +104,7 @@ body table#itemtablesmall tr td:first-child + td {
 body table#itemtable tr td:first-child + td + td img,
 body table#itemtablenotype tr td:first-child + td + td img,
 body table#itemtabledoubleicon tr td:first-child + td + td img,
+body table#itemtablesmalldoubleicon tr td:first-child + td + td img,
 body table#itemtablenostatus tr td:first-child + td + td img,
 body table#itemtablesmall tr td:first-child + td + td img {
 	margin-top: 15px;
@@ -111,9 +119,19 @@ body table#itemtablesmall tr td:first-child + td + td + td {
 	margin-top: 25px;
 }
 
+body table#itemtablesmalldoubleicon tr td:first-child + td + td + td {
+	margin-top: 15px;
+}
+
+#lastupdate {
+	margin-top: 25px !important;
+}
+
+
 body table#itemtable tr td:first-child + td + td + td + td,
 body table#itemtablenotype tr td:first-child + td + td + td + td,
 body table#itemtabledoubleicon tr td:first-child + td + td + td + td,
+body table#itemtablesmalldoubleicon tr td:first-child + td + td + td + td,
 body table#itemtablenostatus tr td:first-child + td + td + td + td,
 body table#itemtablesmall tr td:first-child + td + td + td + td {
 	margin-top: 5px;
@@ -168,8 +186,8 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	border-radius: 0;
 }
 
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
-.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, 
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle, 
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
 	background-color: #6F7169;
 }
@@ -255,7 +273,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
 	left: 8px;
     bottom: 20px;
     position: absolute;
-    padding: 0 12px 0;
+    padding: 0 5px 0;
 }
 
 body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img {
@@ -273,6 +291,8 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	background-image: none;
 	border-color: #6F7169;
 	border-radius: 0;
+	position: absolute;
+    left: 0 !important;
 }
 
 .dropdown-menu .divider {
@@ -289,16 +309,17 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	display: none;
 }
 
+.navbar .pull-right > li > .dropdown-menu:after, 
+.navbar .nav > li > .dropdown-menu.pull-right:after {
+	display: none;
+}
+
 .navbar .nav li {
 	margin: 3px 1px;
 }
 
 .navbar .nav > li > .dropdown-menu.pull-right:before {
-    right: -1px;
-    background-color: #6F7169;
-    padding: 15px 0 0 22px;
-    top: -12px;
-    border-radius: 3px 3px 0 0;
+    display: none;
 }
 
 .dimslider {
@@ -306,7 +327,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 #appversion:after {
-    content: " (OsiDark v0.1)";
+    content: " (OsiDark v0.2)";
 }
 
 #copyright {
@@ -319,26 +340,26 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 #copyright p:after {
-    content: " | theme OsiDark v0.1";
+    content: " | theme OsiDark v0.2";
 }
 
 
 
 /*** jQuery UI ***/
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
 .ui-widget-header .ui-state-default {
 	border: none;
 	background: #6190A9;
 	font-weight: normal;
 }
 
-.ui-state-hover,
-.ui-widget-content .ui-state-hover,
-.ui-widget-header .ui-state-hover,
-.ui-state-focus,
-.ui-widget-content .ui-state-focus,
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-widget-header .ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus, 
 .ui-widget-header .ui-state-focus {
 	border: none;
 	background: #6190A9;
@@ -384,7 +405,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
-    background-color: #316D51;
+    background-color: rgba(49, 109, 81, 0.96);
     margin: 0 auto !important;
     width: 100% !important;
 }
@@ -449,14 +470,18 @@ tr.odd {
 	box-shadow: none;
 }
 
-.mobileitem td,
+.mobileitem td, 
 .mobileitem th {
 	padding: 10px;
     background-image: none;
 	text-shadow: none;
 }
 
-.mobileitem td:first-child,
+.mobileitem #status {
+	width: 95px;
+}
+
+.mobileitem td:first-child, 
 .mobileitem th:first-child {
     padding: 15px 10px;
 }
@@ -497,7 +522,7 @@ tr.odd {
     font-weight: 100;
     padding: 10px;
     width: 45px;
-    margin-left: 5px;
+    overflow: hidden;
 }
 
 .mobileitem .btn-mini {
@@ -514,28 +539,55 @@ tr.odd {
 
 @media (min-width: 768px) {
 
-	body table#itemtable tbody tr,
-	body table#itemtablenotype tbody tr,
-	body table#itemtabledoubleicon tbody tr,
+	body table#itemtable tbody tr, 
+	body table#itemtablenotype tbody tr, 
+	body table#itemtabledoubleicon tbody tr, 
 	body table#itemtablenostatus tbody tr {
 		height: 175px;
 	}
 
-	body table#itemtable tbody tr td:first-child,
-	body table#itemtablenotype tbody tr td:first-child,
-	body table#itemtabledoubleicon tr td:first-child,
-	body table#itemtablenostatus tr td:first-child,
+	body table#itemtablesmalldoubleicon tbody tr {
+		height: 135px !important;
+	}
+
+	body table#itemtable tbody tr td:first-child, 
+	body table#itemtablenotype tbody tr td:first-child, 
+	body table#itemtabledoubleicon tr td:first-child, 
+	body table#itemtablesmalldoubleicon tr td:first-child, 
+	body table#itemtablenostatus tr td:first-child, 
 	body table#itemtablesmall tr td:first-child {
 	   padding: .8em .5em 0 1em;
     	font-size: 0.9rem;
 	}
 
-	body table#itemtable tr td:first-child + td,
-	body table#itemtablenotype tr td:first-child + td,
-	body table#itemtabledoubleicon tr td:first-child + td,
-	body table#itemtablenostatus tr td:first-child + td,
+	body table#itemtable tr td:first-child + td, 
+	body table#itemtablenotype tr td:first-child + td, 
+	body table#itemtabledoubleicon tr td:first-child + td, 
+	body table#itemtablesmalldoubleicon tr td:first-child + td, 
+	body table#itemtablenostatus tr td:first-child + td, 
 	body table#itemtablesmall tr td:first-child + td {
 		font-size: 1rem;
+	}
+
+	body table#itemtablesmalldoubleicon tr td:first-child + td + td + td {
+		margin-top: 5px;
+	}
+
+	body table#itemtablesmalldoubleicon tr td:first-child + td + td +td img {
+	    margin-top: 5px;
+	}
+
+	body table#itemtablesmalldoubleicon tr td:first-child + td + td img {
+		margin-top: 0;
+	}
+
+	body table#itemtablesmalldoubleicon tr td:first-child + td + td + td + td +td {
+	    margin-top: 70px !important;
+	    margin-left: 10px;
+	}
+
+	body table#itemtablesmalldoubleicon tr td:first-child + td + td {
+		margin: 10px 5px 0px 0;
 	}
 
 	.nav-tabs > li {
@@ -543,20 +595,23 @@ tr.odd {
 	    width: 32%;
 	}
 
-
-
 }
 
 @media (min-width: 980px) {
 
-	.navbar .nav li a span,
+	.navbar .nav li a span, 
 	.navbar .nav .current_page_item > a span {
 	    position: relative;
 		top: 4px;
 	}
 
-	.navbar .nav li a, .navbar .nav li a:hover,
-	.navbar .nav .current_page_item > a,
+	.navbar .nav .dropdown-menu li a span, 
+	.navbar .nav .dropdown-menu .current_page_item > a span {
+		top: -4px;
+	}
+
+	.navbar .nav li a, .navbar .nav li a:hover, 
+	.navbar .nav .current_page_item > a, 
 	.navbar .nav .current_page_item > a:hover {
 	    margin-top: 0;
 	    display: block;
