@@ -1,5 +1,5 @@
 /*
-OsiDark theme - v0.2
+OsiDark theme - v0.3
 Bas van Dijk
 https://github.com/basvdijk/domoticz-osidark-theme
 */
@@ -31,6 +31,10 @@ h2 {
 	margin: 22px 0 0 0;
 	font-family: "Open Sans";
     text-transform: uppercase;
+}
+
+.bannercontent {
+    padding-top: 20px;
 }
 
 .brand h1 {
@@ -148,13 +152,9 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
     bottom: 10px;
 }
 
-/*
-body table#itemtablenotype tr td:first-child + td + td + td + td + td + td + td img,
-body table#itemtable tr td:first-child + td + td + td + td + td + td, img,
-body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td img {
-	position: relative;
-	top: 3px;
-}*/
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: static;
+}
 
 .navbar-inverse .navbar-inner {
 	background-color: #AFAC9C;
@@ -327,7 +327,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 #appversion:after {
-    content: " (OsiDark v0.2)";
+    content: " (OsiDark v0.3)";
 }
 
 #copyright {
@@ -340,7 +340,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 #copyright p:after {
-    content: " | theme OsiDark v0.2";
+    content: " | theme OsiDark v0.3";
 }
 
 
@@ -593,6 +593,16 @@ tr.odd {
 	.nav-tabs > li {
 	    margin: 5px 0.65%;
 	    width: 32%;
+	}
+
+	.mobileitem .btn, 
+	.mobileitem .btn-info {
+		width: 70px;
+		margin-left: 10px;
+	}
+
+	.mobileitem #status {
+		width: 170px;
 	}
 
 }
