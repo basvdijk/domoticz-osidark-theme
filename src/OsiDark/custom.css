@@ -1,5 +1,5 @@
 /*
-OsiDark theme - v0.3
+OsiDark theme - v0.4
 Bas van Dijk
 https://github.com/basvdijk/domoticz-osidark-theme
 */
@@ -16,6 +16,16 @@ https://github.com/basvdijk/domoticz-osidark-theme
     border-radius: 0
 }
 
+#bigtext {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.modal.fade.in {
+    margin: auto;
+}
+
+
 #holder,
 body {
 	background: #1F1E1E;
@@ -31,6 +41,10 @@ h2 {
 	margin: 22px 0 0 0;
 	font-family: "Open Sans";
     text-transform: uppercase;
+}
+
+.dimslider {
+	box-shadow: none;
 }
 
 .bannercontent {
@@ -58,7 +72,8 @@ body table#itemtable tbody tr,
 body table#itemtablenotype tbody tr,
 body table#itemtabledoubleicon tbody tr,
 body table#itemtablenostatus tbody tr {
-	height: 160px;
+	/*height: 160px;*/
+	overflow: auto;
 	width: 100%;
 }
 
@@ -148,8 +163,12 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td img {
 body table#itemtablenotype tr td:first-child + td + td + td + td + td,
 body table#itemtable tr td:first-child + td + td + td + td + td + td,
 body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 10px;
+	padding: 0;
+	margin-left: 10px;
+    margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -193,7 +212,7 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 }
 
 .nav > li > a > img {
-    top: 8px;
+    top: 5px;
     left: 3px;
     position: relative;
 }
@@ -272,8 +291,10 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
 	left: 8px;
     bottom: 20px;
-    position: absolute;
-    padding: 0 5px 0;
+    /*position: absolute;*/
+    padding: 0;
+	margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img {
@@ -292,7 +313,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	border-color: #6F7169;
 	border-radius: 0;
 	position: absolute;
-    left: 0 !important;
+    /*left: 0 !important;*/
 }
 
 .dropdown-menu .divider {
@@ -302,7 +323,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 
 .navbar .nav {
     top: 9px;
-    margin: -11px 0 6px 0;
+	margin: -5px 15px 10px 0;
 }
 
 .navbar .pull-right > li > .dropdown-menu:before {
@@ -387,8 +408,10 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 
 .ui-widget-content {
 	background: white;
-	border: 1px solid #3E3E3E;
+	border: 1px solid #CCC;
 	color: black;
+	position: relative;
+	margin: 15px auto;
 }
 
 .ui-dialog-titlebar .ui-button {
@@ -543,7 +566,7 @@ tr.odd {
 	body table#itemtablenotype tbody tr, 
 	body table#itemtabledoubleicon tbody tr, 
 	body table#itemtablenostatus tbody tr {
-		height: 175px;
+		/*height: 175px;*/
 	}
 
 	body table#itemtablesmalldoubleicon tbody tr {
@@ -609,10 +632,16 @@ tr.odd {
 
 @media (min-width: 980px) {
 
+	
+	.navbar .nav {
+		top: 9px;
+		margin: -5px 15px 10px 0
+	}
+
 	.navbar .nav li a span, 
 	.navbar .nav .current_page_item > a span {
 	    position: relative;
-		top: 4px;
+		top: 5px;
 	}
 
 	.navbar .nav .dropdown-menu li a span, 
@@ -630,6 +659,8 @@ tr.odd {
 
 	.navbar-inverse .navbar-inner {
 		padding: 6px;
+		margin-left: -5px;
+    	margin-right: -5px;
 	}
 
 	.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
