@@ -1,0 +1,5 @@
+0.4
+- Fixed sliders in desktop and mobile view for dimmers
+- Fixed dropdown menu positions
+- Fixed overflow for buttons
+- Fixed alignment for menu icons
