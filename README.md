@@ -25,6 +25,10 @@ Create a Domoticz theme with:
 
 3) In Domoticz goto Setup -> Settings -> Theme and pick OsiDark
 
+or ssh to your Domoticz folder and execute:
+
+`mkdir www/styles/osi-dark && wget https://raw.githubusercontent.com/basvdijk/domoticz-osidark-theme/master/dist/OsiDark/custom.css -o www/styles/osi-dark/custom.css`
+
 ### Your css uses the most ugly selectors possible
 
 I completely agree. Unfortunately Domoticz does not provide classes on the elements, and sometimes has hardcoded styles in the HTML. Therefore I am forced to use these ugly selectors and sometimes even need to use !important.
