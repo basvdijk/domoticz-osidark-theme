@@ -1,5 +1,5 @@
 /*
-OsiDark theme - v0.4
+OsiDark theme - v0.5
 Bas van Dijk
 https://github.com/basvdijk/domoticz-osidark-theme
 */
@@ -56,12 +56,13 @@ h2 {
 }
 
 .brand h2 {
-	font-family: courier;
-	font-style: normal;
+    font-family: courier;
+    font-style: normal;
     color: #5A4F4F;
-    font-size: 0.6em;
-    margin-top: -21px;
+    font-size: 11px;
+    margin-top: -6px;
     width: 300px;
+    margin-left: 0px;
 }
 
 .container-fluid {
@@ -103,7 +104,7 @@ body table#itemtablesmalldoubleicon tr td:first-child,
 body table#itemtablenostatus tr td:first-child,
 body table#itemtablesmall tr td:first-child {
 	border-radius: 0;
-	background-color: #A2B6CC;
+	background-color: #eae5db !important;
 	border-width: 0;
 	height: 30px;
 	padding: .3em .5em .3em 1em;
@@ -171,6 +172,13 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	margin-top: 10px;
 }
 
+body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td img {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    position: relative;
+}
+
 .navbar-fixed-top, .navbar-fixed-bottom {
 	position: static;
 }
@@ -194,6 +202,11 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	text-align: left;
 }
 
+.navbar .nav .dropdown-menu li a,
+.navbar .nav .dropdown-menu li a:hover {
+	padding: 10px 15px 5px 10px !important
+}
+
 .navbar .nav li a span,
 .navbar .nav .current_page_item > a span {
 	margin-left: 2px;
@@ -211,9 +224,13 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	background-color: #6F7169;
 }
 
+
+.nav li a img {
+    vertical-align: inherit;
+}
+
 .nav > li > a > img {
-    top: 5px;
-    left: 3px;
+    top: 9px;
     position: relative;
 }
 
@@ -237,6 +254,9 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	border-color: #D25858 !important;
 }
 
+.btnsmall:hover {
+    color: #5bc0de;
+}
 
 .btnsmall {
 	background: #6190A9;
@@ -246,7 +266,12 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	background: #8C61A9;
 }
 
+.btnsmall-dis {
+	background: #d8d8d8;
+}
+
 .btnsmall,
+.btnsmall-dis,
 .btnsmall-sel {
 	border-radius: 3px;
     text-transform: uppercase;
@@ -301,6 +326,8 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
     top: 4px;
     left: -1px;
     position: relative;
+	width: 20px;
+    height: 20px;
 }
 
 .dropdown.open {
@@ -317,8 +344,8 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 .dropdown-menu .divider {
-    background-color: #4E4E4E;
-    border-bottom: 1px solid #A7A7A7;
+    background-color: transparent;
+    border-bottom: 1px solid #868686;
 }
 
 .navbar .nav {
@@ -677,6 +704,55 @@ tr.odd {
 	.nav-tabs > li {
 		margin: 5px 0.5%;
     	width: 19%;
+	}
+
+	body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td img,
+	body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img {
+		top: 10px;
+		left: 10px;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+	}
+
+	body table#itemtable tbody tr td:first-child, 
+	body table#itemtablenotype tbody tr td:first-child, 
+	body table#itemtabledoubleicon tr td:first-child, 
+	body table#itemtablesmalldoubleicon tr td:first-child, 
+	body table#itemtablenostatus tr td:first-child, 
+	body table#itemtablesmall tr td:first-child {
+		padding: 10px 0.5em 0 40px;
+	}
+
+	body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td,
+	body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
+		margin-top: 35px;
+		margin-bottom: 0;
+		margin-left: 0;
+		padding: 5px;
+    	overflow: auto;
+		background: #ececec;
+    }
+
+	.btnsmall, .btnsmall-dis, .btnsmall-sel {
+		margin-top: 0;
+		float: left;
+	}
+
+	.btnsmall {
+		color: #6190A9;
+		background: transparent;
+		padding: 0 5px;
+	}
+
+	.btnsmall-sel {
+    	color: #8C61A9;
+		background: transparent;
+	}
+
+	.btnsmall-dis {
+		color: #d8d8d8;
+		background: transparent;
 	}
 
 }

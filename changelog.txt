@@ -1,4 +1,12 @@
-0.4
+v0.5
+- Fixed menu icon alignment
+- Fixed disabled button style
+- Fixed sub-menu alignment
+- Moved favorite toggle star in front of title
+- Created widget action bar
+- Changed hover color of action buttons
+
+v0.4
 - Fixed sliders in desktop and mobile view for dimmers
 - Fixed dropdown menu positions
 - Fixed overflow for buttons
