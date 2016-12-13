@@ -1,5 +1,5 @@
 /*
-OsiDark theme - v0.6
+OsiDark theme - v0.5
 Bas van Dijk
 https://github.com/basvdijk/domoticz-osidark-theme
 */
@@ -67,6 +67,27 @@ h2 {
 
 .container-fluid {
 	padding-bottom: 50px;
+}
+
+body .dd-option-image,
+body .dd-selected-image {
+    margin-right: 15px;
+}
+
+body .dd-selected-text,
+body .dd-option-text {
+	display: block;
+	padding-top: 3px;
+}
+
+body table#itemtable tr td:first-child + td + td + td + td + td {
+    font-size: 80%;
+	padding-left: 67px;
+}
+
+body table#itemtablenostatus tbody tr:hover {
+    border-color: transparent;
+	background-color: #F1F5FA; 
 }
 
 body table#itemtable tbody tr,
@@ -157,6 +178,7 @@ body table#itemtablesmalldoubleicon tr td:first-child + td + td + td + td,
 body table#itemtablenostatus tr td:first-child + td + td + td + td,
 body table#itemtablesmall tr td:first-child + td + td + td + td {
 	margin-top: 5px;
+	margin-left: 65px;
 }
 
 body table#itemtabledoubleicon tr td:first-child + td + td + td img {
@@ -306,6 +328,7 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	margin: 20px 0 20px;
 }
 
+table#itemtable tr td:first-child + td + td + td + td + td + td,
 body table#itemtablenotype tr td:first-child + td + td + td + td + td, 
 table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td,
 body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
@@ -315,6 +338,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
 	margin-top: 32px;
 }
 
+body table#itemtable tr td:first-child + td + td + td + td + td + td img,
 body table#itemtablenotype tr td:first-child + td + td + td + td + td img, 
 body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td img,
 body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img {
@@ -583,7 +607,12 @@ tr.odd {
 
 @media (min-width: 768px) {
 
-	body table#itemtable tbody tr, body table#itemtablenotype tbody tr, body table#itemtabledoubleicon tbody tr, body table#itemtablesmalldoubleicon tbody tr, body table#itemtablenostatus tbody tr, body table#itemtablesmall tbody tr {
+	body table#itemtable tbody tr, 
+	body table#itemtablenotype tbody tr, 
+	body table#itemtabledoubleicon tbody tr, 
+	body table#itemtablesmalldoubleicon tbody tr, 
+	body table#itemtablenostatus tbody tr, 
+	body table#itemtablesmall tbody tr {
     	min-height: 200px;
 	}
 
@@ -627,6 +656,7 @@ tr.odd {
 		width: 170px;
 	}
 
+	body table#itemtable tr td:first-child + td + td + td + td + td + td
 	body table#itemtablenotype tr td:first-child + td + td + td + td + td, 
 	table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td, 
 	body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
@@ -639,6 +669,7 @@ tr.odd {
 		padding: 5px 10px;
 	}
 
+	body table#itemtable tr td:first-child + td + td + td + td + td + td img,
 	body table#itemtablenotype tr td:first-child + td + td + td + td + td img, 
 	body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td img, 
 	body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img {
@@ -649,7 +680,7 @@ tr.odd {
 
 @media (min-width: 980px) {
 
-	
+	body table#itemtable tr td:first-child + td + td + td + td + td + td,
 	body table#itemtablenotype tr td:first-child + td + td + td + td + td, 
 	body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td, 
 	body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td {
@@ -666,6 +697,7 @@ tr.odd {
     	min-height: auto;
 	}
 
+	body table#itemtable tr td:first-child + td + td + td + td + td + td img,
 	body table#itemtablenotype tr td:first-child + td + td + td + td + td img, 
 	body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td + td img, 
 	body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img {
@@ -746,7 +778,8 @@ tr.odd {
 
 @media (min-width: 1200px) {
 
-	body table#itemtable tbody tr td:first-child, body table#itemtablenotype tbody tr td:first-child, 
+	body table#itemtable tbody tr td:first-child, 
+	body table#itemtablenotype tbody tr td:first-child, 
 	body table#itemtabledoubleicon tr td:first-child, 
 	body table#itemtablesmalldoubleicon tr td:first-child, 
 	body table#itemtablenostatus tr td:first-child, body table#itemtablesmall tr td:first-child {
