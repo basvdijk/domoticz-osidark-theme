@@ -27,7 +27,7 @@ Create a Domoticz theme with:
 
 or ssh to your Domoticz folder and execute:
 
-`mkdir www/styles/osi-dark && wget https://raw.githubusercontent.com/basvdijk/domoticz-osidark-theme/master/dist/OsiDark/custom.css -o www/styles/osi-dark/custom.css`
+`mkdir www/styles/osi-dark && wget https://raw.githubusercontent.com/basvdijk/domoticz-osidark-theme/master/dist/OsiDark/custom.css -O www/styles/osi-dark/custom.css`
 
 ### I still see the default theme :(
 
