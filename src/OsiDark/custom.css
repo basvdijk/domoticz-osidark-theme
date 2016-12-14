@@ -481,14 +481,6 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	margin: 15px auto;
 }
 
- .ui-widget-content {
-	background: white;
-	border: 1px solid #CCC;
-	color: black;
-	position: relative;
-	margin: 15px auto;
- }
- 
 .ui-dialog-titlebar .ui-button {
 	background: transparent;
 }
