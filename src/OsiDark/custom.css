@@ -13,7 +13,7 @@ https://github.com/basvdijk/domoticz-osidark-theme
     border-width: 5px;
     border-color: rgba(255, 255, 255, 0.47);
     border-style: solid;
-    border-radius: 0
+    border-radius: 0;
 }
 
 #bigtext {
@@ -665,7 +665,7 @@ tr.odd {
 	}
 
 	body table#itemtablesmalldoubleicon tr td:first-child + td + td + td + td +td {
-	    margin-top: 70px !important;
+	    margin-top: 20px !important;
 	    margin-left: 10px;
 	}
 
@@ -834,8 +834,3 @@ tr.odd {
 	}
 
 }
-
-
-
-
-
