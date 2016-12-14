@@ -167,7 +167,7 @@ body table#itemtablesmalldoubleicon tr td:first-child + td + td + td {
 }
 
 #lastupdate {
-	margin-top: 25px !important;
+	margin-top: 10px !important;
 }
 
 
