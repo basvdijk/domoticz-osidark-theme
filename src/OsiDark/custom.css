@@ -1,5 +1,5 @@
 /*
-OsiDark theme - v0.5
+OsiDark theme - v0.0
 Bas van Dijk
 https://github.com/basvdijk/domoticz-osidark-theme
 */
@@ -21,7 +21,7 @@ https://github.com/basvdijk/domoticz-osidark-theme
 	font-weight: normal;
 }
 
-.modal.fade.in {
+.modal {
     margin: auto;
 }
 
@@ -284,6 +284,7 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	color: #d8d8d8;
 }
 
+
 .btnsmall,
 .btnsmall-dis,
 .btnsmall-sel {
@@ -300,7 +301,6 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
     border-radius: 3px;
     padding: 0;
 }
-
 
 .btnstyle {
 	padding-left: 10px;
@@ -322,6 +322,28 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
 	content: "\f053";
     font-family: FontAwesome;
     margin: 10px;
+}
+
+
+.btnstyle3,
+.btnstyle3-dis,
+.btnstyle3-sel {
+	border-radius: 3px;
+	margin-top: 10px;
+}
+
+.btnstyle3 {
+	background: #6190A9;
+    
+}
+
+.btnstyle3-dis {
+	color: #AAA;
+	background: #888;
+}
+
+.btnstyle3-sel {
+	background: #8C61A9;
 }
 
 .bannav {
@@ -467,6 +489,11 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	border-radius: 20px;
 }
 
+table.display tr.even.row_selected td,
+table.display tr.odd.row_selected td {
+    background-color: #ffb715;
+}
+
 /*** NOTIFICATIONS ***/
 
 #noty_topRight_layout_container {
@@ -522,6 +549,11 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	text-shadow: none;
 	background-image: none;
 	border: none;
+}
+
+.modal-footer .btn + .btn {
+    background: #6190A9;
+    border-radius: 3px;
 }
 
 /*** TABLE ***/
@@ -771,6 +803,10 @@ tr.odd {
 	.btnsmall-dis {
 		color: #d8d8d8;
 		background: transparent;
+	}
+
+	.ui-dialog .ui-dialog-buttonpane button {
+    	border-radius: 3px;
 	}
 
 }
