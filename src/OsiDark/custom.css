@@ -482,19 +482,13 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
  .ui-widget-content {
-	background: white none repeat scroll 0 0;
-	border: 1px solid #ccc;
+	background: white;
+	border: 1px solid #CCC;
 	color: black;
-	margin: 23px 0 -32px 3px;
 	position: relative;
+	margin: 15px auto;
  }
  
- .colpick {
-     margin: 10px -5px -1px -2px;
-     overflow: hidden;
-     position: absolute;
- }
-
 .ui-dialog-titlebar .ui-button {
 	background: transparent;
 }
