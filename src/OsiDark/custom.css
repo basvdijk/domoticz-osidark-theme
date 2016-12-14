@@ -474,15 +474,41 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 .ui-widget-content {
-	background: white;
-	border: 1px solid #CCC;
+    background: #eae7e7;
+    border: 1px solid #69615A;
 	color: black;
 	position: relative;
 	margin: 15px auto;
 }
 
+.ui-widget-content.text {
+	background: white;
+	border-color: #CCC;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	padding: 10px;
+    margin: 0;
+	background: #d6d6d6;
+    border: 0;
+}
+
 .ui-dialog-titlebar .ui-button {
 	background: transparent;
+}
+
+.dimslider.ui-slider {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+17,ffc254+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 17%, #ffc254 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #ffffff 17%,#ffc254 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #ffffff 17%,#ffc254 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffc254',GradientType=1 ); /* IE6-9 */
+}
+
+.dimslider .ui-slider-range {
+	border-radius: 0;
+    background: transparent;
 }
 
 .ui-slider-handle {
