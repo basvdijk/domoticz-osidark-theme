@@ -263,6 +263,13 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td +
     color: white;
 }
 
+/*** DROPDOWN MENUS ***/
+
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu, 
+.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
+	border-radius: 0;
+}
+
 .sub-tabs > li > a.btn-danger {
 	background: #D25858;
 	border-color: #D25858 !important;
