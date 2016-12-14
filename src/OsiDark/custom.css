@@ -486,6 +486,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 	color: black;
 	position: relative;
 	margin: 15px auto;
+	max-width: 100vw;
 }
 
 .ui-widget-content.text {
