@@ -418,7 +418,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 #appversion:after {
-    content: " (OsiDark v0.3)";
+    content: " (OsiDark theme)";
 }
 
 #copyright {
@@ -431,7 +431,7 @@ body table#itemtablenostatus tr td:first-child + td + td + td + td + td + td img
 }
 
 #copyright p:after {
-    content: " | theme OsiDark v0.3";
+    content: " | OsiDark theme";
 }
 
 
